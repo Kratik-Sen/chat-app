@@ -50,7 +50,7 @@ const handleSendMessage=async (e)=>{ //p5
     setFrontendImage(null)
     setBackendImage(null)
   } catch (error) {
-    console.log(error)
+    // console.log(error)
   }
 }
 

@@ -29,9 +29,9 @@ userName,email,password
             setPassword("")
             setLoading(false)
             setErr("")
-        console.log(result);
+        // console.log(result);
         } catch (error) {
-            console.log(error)
+            // console.log(error)
             setLoading(false)
             setErr(error?.response?.data?.message)
         }

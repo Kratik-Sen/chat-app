@@ -24,7 +24,7 @@ function Login() {
                 },{withCredentials:true})
                  dispatch(setUserData(result.data))//p2
                  dispatch(setSelectedUsers(null))//p5
-                console.log(result);
+                // console.log(result);
                 navigate('/')
                 setEmail("")
             setPassword("")
@@ -32,7 +32,7 @@ function Login() {
             setErr("")
               
             } catch (error) {
-                console.log(error)
+                // console.log(error)
                 setLoading(false)
             setErr(error?.response?.data?.message)
 

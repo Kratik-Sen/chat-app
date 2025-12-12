@@ -27,7 +27,7 @@ dispatch(setUserData(null))
 dispatch(setOtherUsers(null))
 navigate("/login")
         } catch (error) {
-            console.log(error)
+            // console.log(error)
         }
     }
 
@@ -38,7 +38,7 @@ navigate("/login")
            
         }
         catch(error){
-console.log(error)
+// console.log(error)
         }
     }
 

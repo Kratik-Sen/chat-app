@@ -13,7 +13,7 @@ const getOtherUsers=()=>{
                 let result=await axios.get(`${serverUrl}/api/user/others`,{withCredentials:true})
                 dispatch(setOtherUsers(result.data))
             } catch (error) {
-                console.log(error)
+                // console.log(error)
             }
         }
         fetchUser()

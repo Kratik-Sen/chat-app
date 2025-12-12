@@ -15,7 +15,7 @@ const getMessages=()=>{
                 let result=await axios.get(`${serverUrl}/api/message/get/${selectedUser._id}`,{withCredentials:true})
                 dispatch(setMessages(result.data))
             } catch (error) {
-                console.log(error)
+                // console.log(error)
             }
         }
         fetchMessages()

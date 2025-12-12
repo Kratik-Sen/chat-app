@@ -38,7 +38,7 @@ try {
     dispatch(setUserData(result.data))
     navigate("/")
 } catch (error) {
-    console.log(error)
+    // console.log(error)
     setSaving(false)
 }
 }
