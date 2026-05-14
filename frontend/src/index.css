@@ -2,15 +2,66 @@
 @tailwind components;
 @tailwind utilities;
 
+/* QuickChat palette: accent #FF9800, black #000000, white #ffffff */
+:root {
+  --qc-accent: #ff9800;
+  --qc-black: #000000;
+  --qc-white: #ffffff;
+  --qc-hover: #fff3e0;
+  --qc-surface: #f5f5f5;
+}
+
 /* Hide scrollbar for Chrome, Safari and Opera */
-/* remove example from example::-webkit-scrollber */
 ::-webkit-scrollbar {
-    display: none;
-  }
-  
-  /* Hide scrollbar for IE, Edge and Firefox */
-  /* write body inplace of example */
-  body {
-    -ms-overflow-style: none;  /* IE and Edge */
-    scrollbar-width: none;  /* Firefox */
-  }
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+body {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  background-color: var(--qc-surface);
+  color: var(--qc-black);
+}
+
+/* Overrides: legacy cyan rgb(32 199 255) → #FF9800; teal bars → black; hovers → warm tint.
+   #root prefix beats duplicate Tailwind utilities in the bundle. */
+#root .bg-\[\#20c7ff\] {
+  --tw-bg-opacity: 1 !important;
+  background-color: rgb(255 152 0 / var(--tw-bg-opacity, 1)) !important;
+}
+
+#root .border-\[\#20c7ff\] {
+  --tw-border-opacity: 1 !important;
+  border-color: rgb(255 152 0 / var(--tw-border-opacity, 1)) !important;
+}
+
+#root .text-\[\#20c7ff\] {
+  --tw-text-opacity: 1 !important;
+  color: rgb(255 152 0 / var(--tw-text-opacity, 1)) !important;
+}
+
+#root .bg-\[\#1797c2\] {
+  --tw-bg-opacity: 1 !important;
+  background-color: var(--qc-black) !important;
+}
+
+#root .bg-\[rgb\(23\,151\,194\)\] {
+  --tw-bg-opacity: 1 !important;
+  background-color: var(--qc-black) !important;
+}
+
+#root .hover\:bg-\[\#78cae5\]:hover {
+  --tw-bg-opacity: 1 !important;
+  background-color: var(--qc-hover) !important;
+}
+
+#root .bg-\[\#3aff20\] {
+  --tw-bg-opacity: 1 !important;
+  background-color: rgb(255 152 0 / var(--tw-bg-opacity, 1)) !important;
+}
+
+#root .bg-slate-200 {
+  --tw-bg-opacity: 1 !important;
+  background-color: var(--qc-surface) !important;
+}
